@@ -167,7 +167,7 @@ int main() {
 ## Ejercicio Complementario:
 Completar la siguiente tabla con el significado de las palabras reservadas en C que correspondan a tipo de datos que debe seleccionar del listado de  abajo:
 
-(imagen de PalabrasRevervadas subir link.)
+![PalabrasReservadasC](https://github.com/LeonardoBrabo/TUP_Lab_Computacion1_C/blob/main/Trabajos%20Practicos%20Resueltos/TP%20N1-U1/Img/palabrasReservadasC.jpg?raw=true "PalabrasReservadasC")
 
 
 | Palabras Reservadas | Significado                                                                   |

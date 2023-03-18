@@ -6,7 +6,7 @@ Marcar con una cruz los identificadores válidos. Si no son válidos, explicar p
 | Identificador | Validos | Explicación |
 |:---:|---|:---:|
 | registro1 | **X** |  |
-| 1resitro |  | No es válido porque comienza con un número. |
+| 1registro |  | No es válido porque comienza con un número. |
 | float |  | No es válido porque es una palabra reservada. |
 | Nombre y dirección |  | No es válido porque hay espacios entre palabras y se usa una letra con acénto. |
 | e-mail |  | No es valido porque contiene un guión medio. |

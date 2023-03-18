@@ -182,4 +182,4 @@ Completar la siguiente tabla con el significado de las palabras reservadas en C 
 
 ------------
 
-##### :tw-270c: :tw-1f4bb: *TP resuelto por Leonardo Brabo.*
+##### 🖥️👉 *TP resuelto por Leonardo Brabo.* 

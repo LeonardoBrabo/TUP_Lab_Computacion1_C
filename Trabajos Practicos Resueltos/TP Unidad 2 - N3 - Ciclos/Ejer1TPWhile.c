@@ -4,7 +4,13 @@ se pide determinar el dia de mayor lluvia el de menor y el promedio.*/
 #include <stdio.h>
 #include <conio.h>
 
+
+
+
 int main(int argc, char *argv[]) {
+	
+	
+	
 	
 	float cantidadAgua, suma, mayor, menor;
 	int dia,diaMayor,diaMenor,prim;
@@ -18,7 +24,7 @@ int main(int argc, char *argv[]) {
 	while (dia <= 7){
 		
 		printf("\nDia a Cargar %d",dia);
-		printf("\nIngrese la cantidad de agua del día %: ",dia);
+		printf("\nIngrese la cantidad de agua del día %d: ",dia);
 		scanf("%f",&cantidadAgua);
 		
 		/*Control para asignar el primer valor de comparacion a las variables mayor y menor.*/

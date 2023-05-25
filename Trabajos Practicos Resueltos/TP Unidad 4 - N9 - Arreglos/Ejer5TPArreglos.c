@@ -24,8 +24,8 @@ void mostrar(int arr[],int longitud){
 
 int main(int argc, char *argv[]) {
 	
-	int vec1[MAX] = {75,70,60,40,39,37,30,31,27,19};
-	int vec2[MAX] ={73,70,69,68,60,55,50,52,51,49};
+	int vec1[MAX] = {75,71,60,40,39,37,30,31,27,19};
+	int vec2[MAX] ={73,70,69,68,60,55,52,51,50,49};
 	int vec3[MAX*2];
 	int i = 0, j = 0, k = 0;
 	
@@ -34,47 +34,49 @@ int main(int argc, char *argv[]) {
 	y luego termino de completar el arreglo ordenado al salir del while(se controla si termino alguno de los dos.)luego con dos while más se elige
 	dependiendo de cual falta por terminar de recorrer.*/
 	
-	while( ( j < MAX ) && ( k < MAX ) ){
+	while( ( i < MAX ) && ( j < MAX ) ){
 		
 		
-		if(vec1[j] > vec2[k]){
+		if(vec1[i] > vec2[j]){
 			
 			/*caso en el que el vector1 su elemento es el mayor*/
-			vec3[i] = vec1[j];
-			j++;
-			
-		}else if(vec2[k] > vec1[j]){
-			
-			/*caso en el que el vector2 su elemento es el mayor*/
-			vec3[i] = vec2[k];
-			k++;
+			vec3[k] = vec1[i];
+			i++;
 			
 		}else{
 			
-			/*caso en el que son iguales*/
-			vec3[i] = vec1[j];
-			vec3[i+1]= vec2[k];
-			j++;
-			k++;
-		}
+			if(vec2[k] > vec1[j]){
+				
+				/*caso en el que el vector2 su elemento es el mayor*/
+				vec3[k] = vec2[j];
+				j++;
+				
+			}else{
+				
+				/*caso en el que son iguales*/
+				vec3[k] = vec1[i];
+				i++;
+				j++;
+			}
+		} 
 		
-		i++;
-		
-	}
-	
-	while( j < MAX){
-		
-		vec3[i] = vec2[j];
-		j++;
-		i++;
-		
-	}
-	
-	while(k < MAX){
-		
-		vec3[i] = vec2[k];
 		k++;
+		
+	}
+	
+	while( i < MAX  &&  k < (MAX*2)){
+		
+		vec3[k] = vec1[i];
 		i++;
+		k++;
+		
+	}
+	
+	while(j < MAX && k < (MAX*2)){
+		
+		vec3[k] = vec2[j];
+		j++;
+		k++;
 	}
 	
 	
